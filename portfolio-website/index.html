@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A personal portfolio website." />
+    <title>Alex Morgan | Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Alex Morgan home">AM<span>.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" aria-label="Switch to dark theme">◐</button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero section">
+        <p class="eyebrow">Front-end developer · Bangkok, Thailand</p>
+        <h1>I create clear, friendly websites that people enjoy using.</h1>
+        <p class="hero-copy">I am Alex, a developer focused on responsive interfaces, accessible interactions, and thoughtful details.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">See my work <span aria-hidden="true">↓</span></a>
+          <a class="button text-button" href="contact.html">Let's work together <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="scroll-note">Scroll to explore <span aria-hidden="true">↓</span></p>
+      </section>
+
+      <section id="about" class="about section">
+        <p class="section-label">01 / About</p>
+        <div>
+          <h2>Design-minded development, built for the real web.</h2>
+          <p>I turn ideas into fast, usable pages with semantic HTML, modern CSS, and JavaScript. This sample portfolio uses placeholder information so it can be personalized with your projects and contact details.</p>
+          <ul class="skills" aria-label="Skills">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Git</li><li>Responsive design</li><li>Accessibility</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section">
+        <div class="section-heading">
+          <p class="section-label">02 / Selected work</p>
+          <h2>Projects I’m proud of</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card card-one">
+            <div class="project-visual visual-dashboard" aria-hidden="true"><span>01</span><div class="chart"></div><div class="chart short"></div><div class="chart medium"></div></div>
+            <p class="project-type">Data dashboard</p>
+            <h3>Morning Brew</h3>
+            <p>A responsive dashboard for exploring a small coffee-sales data set.</p>
+            <p class="tech">HTML · CSS · JavaScript</p>
+          </article>
+          <article class="project-card card-two">
+            <div class="project-visual visual-library" aria-hidden="true"><span>02</span><div class="book b1"></div><div class="book b2"></div><div class="book b3"></div></div>
+            <p class="project-type">Interactive web app</p>
+            <h3>Readlist</h3>
+            <p>A simple reading-list interface with filters and saved preferences.</p>
+            <p class="tech">HTML · CSS · JavaScript</p>
+          </article>
+          <article class="project-card card-three">
+            <div class="project-visual visual-travel" aria-hidden="true"><span>03</span><div class="sun"></div><div class="hill hill-one"></div><div class="hill hill-two"></div></div>
+            <p class="project-type">Marketing website</p>
+            <h3>Wander Notes</h3>
+            <p>An editorial travel guide designed to read beautifully on any screen.</p>
+            <p class="tech">HTML · CSS · Responsive design</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-cta section">
+        <p class="section-label">03 / Contact</p>
+        <h2>Have an idea?<br />Let’s make it useful.</h2>
+        <a class="button primary" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Alex Morgan. Built with HTML, CSS, and JavaScript.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
